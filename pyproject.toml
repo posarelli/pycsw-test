@@ -1,0 +1,32 @@
+[project]
+name = "pycsw-dynamic"
+version = "0.0.1"
+authors = [
+  { name="Emanuele Tajariol", email="emanuele.tajariol@geosolutionsgroup.com" },
+]
+description = "Dynamically creates XML metadata from DB fields to be published by pycsw"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+license.file = "LICENSE"
+
+keywords = ["csw", "pycsw",
+    "geospatial", "metadata", "ISO19139", "ISO19115",
+    "ecmwf", "geosolutions", "geosolutionsgroup",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ecmwf-projects/pycsw-dynamic"
+"Bug Tracker" = "https://github.com/ecmwf-projects/pycsw-dynamic/issues"
+
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
